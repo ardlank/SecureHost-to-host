@@ -19,7 +19,7 @@ $ make
 
 ### Next, you need to establish the tunnel interface between the VMs
 
-#### Running the server executable:
+#### On the server virtual machine:
 ```
 $ sudo ./serv
 ```
@@ -42,7 +42,7 @@ $ ifconfig
 ```
 
 
-#### Running the client exectuable:**
+#### On the client virtual machine:
 ```
 $ sudo ./cli "ip address of the server"
 ```
@@ -74,12 +74,12 @@ $ sudo route add -net 10.0.4.0 netmask 255.255.255.0 dev tun0
 
 Now you can ping and ssh from one virtual machine to another machine.
 
-### On server
+### On server you can try:
 ```
 $ ping 10.0.5.1
 $ ssh 10.0.5.1
 ```
-### On client
+### On client you can try:
 ```
 $ ping 10.0.4.1
 $ ssh 10.0.4.1
