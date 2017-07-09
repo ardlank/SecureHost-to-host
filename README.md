@@ -58,14 +58,14 @@ $ sudo ifconfig tun0 up
 
 Now the client VM has an two interfaces, one is its own Ethernet card interface, and the other is the virtual network interface called tun0.
 
-## Route the virtual machines to each other
+### Route the virtual machines to each other
 
-### Server's virtual machine
+#### Server's virtual machine
 ```
 $ sudo route add -net 10.0.5.0 netmask 255.255.255.0 dev tun0
 ```
 
-### Client's virtual machine
+#### Client's virtual machine
 ```
 $ sudo route add -net 10.0.4.0 netmask 255.255.255.0 dev tun0
 ```
