@@ -58,7 +58,7 @@ $ sudo ifconfig tun0 up
 
 Now the client VM has an two interfaces, one is its own Ethernet card interface, and the other is the virtual network interface called tun0.
 
-### Lastly, Route the virtual machines to each other
+### Lastly, route the virtual machines to each other
 
 #### Server's virtual machine
 ```
